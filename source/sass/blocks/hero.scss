@@ -1,0 +1,158 @@
+.hero {
+  background: $main-gradient;
+}
+.hero__wrapper {
+  margin: 0 auto;
+  display: flex;
+  gap: 64px;
+  max-width: 1366px;
+  padding: 51px 303px 51px 122px;
+
+  @include vp-1199 {
+    justify-content: space-between;
+    padding: 82px 45px;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    padding: 61px 5px 78px;
+    width: 320px;
+  }
+}
+
+.hero__information {
+  position: relative;
+  padding: 127px 0 0;
+  color: $color-white;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  text-align: right;
+
+  @include vp-1199 {
+    padding: 58px 0 0;
+    column-gap: 8px;
+  }
+
+  @include vp-767 {
+    padding: 52px 0 0;
+    width: 100%;
+    column-gap: 0;
+  }
+}
+
+.hero__information h1 {
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  grid-column: 2/3;
+  width: 250px;
+
+  @include h1-header;
+
+  @include vp-1199 {
+    margin-bottom: 14px;
+    text-transform: none;
+    width: 200px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 22px;
+    padding-right: 10px;
+  }
+}
+
+.hero__information p {
+  margin: 0 0 -12px;
+  padding-right: 51px;
+  padding-bottom: 12px;
+  font-family: $ff-primary;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  text-transform: lowercase;
+  grid-column: 2/3;
+
+    @include vp-1199 {
+    margin: 0 0 -8px;
+    padding-right: 4px;
+    font-size: 34px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 18px;
+    padding-right: 12px;
+    font-size: 28px;
+    letter-spacing: 0.05rem;
+  }
+}
+
+.hero__list {
+  margin: 0;
+  padding: 40px 7px 0 0;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: center;
+  text-align: right;
+  @include text-small;
+
+  @include vp-1199 {
+    padding-top: 36px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    left: 10px;
+    padding-top: 24px;
+    padding-right: 0;
+  }
+}
+
+.hero img {
+  object-fit: cover;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__button {
+  padding:24px 56px 24px 57px;
+
+  @include button-regular;
+  @include button-white;
+
+  justify-self: flex-end;
+  align-self: flex-start;
+  color: $color-white;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 4px solid $border-color-white;
+  grid-column: 2/3;
+
+  @include button-regular;
+
+  @include hover-focus {
+    color: $color-bright-blue;
+    background-color: $color-white;
+    outline: none;
+  }
+
+  @include active {
+    color: $color-primary;
+  }
+
+  @include vp-1199 {
+    padding: 22px 32px;
+  }
+
+  @include vp-767 {
+    padding: 22px 84px;
+    justify-self: center;
+    text-align: center;
+    grid-column: 1/3;
+  }
+}
+
+.hero__item {
+    width: 115px;
+}
+
