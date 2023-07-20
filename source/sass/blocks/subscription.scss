@@ -1,19 +1,12 @@
 .subscription {
+  position: relative;
   background-color: $bg-color-light-grey;
-}
 
-.subscriptoin__wrapper {
-  margin: 0 auto;
-  padding: 126px 20px 120px;
-  max-width: 1366px;
-  width: 100%;
-  z-index: 1;
-
-  &::after {
+    &::after {
     position: absolute;
     content: "";
-    right: 4px;
-    bottom: 45px;
+    right: 0;
+    bottom: -96px;
     width: 321px;
     height: 384px;
     background-repeat: no-repeat;
@@ -38,7 +31,8 @@
     &::after {
       width: 348px;
       height: 395px;
-      bottom: -100px;
+      bottom: 5px;
+      right: 5px;
       background-image: image-set(url("../img/pancakes-tablet.webp") type("image/webp"),
       url("../img/pancakes-tablet.png") type("image/png"));
     }
@@ -60,6 +54,68 @@
       background: none;
     }
   }
+}
+
+.subscriptoin__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 126px 20px 120px;
+  max-width: 1366px;
+  width: 100%;
+  z-index: 1;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   right: 0;
+  //   bottom: -94px;
+  //   width: 321px;
+  //   height: 384px;
+  //   background-repeat: no-repeat;
+  //   background-position: right;
+  //   z-index: 0;
+  //   background-image: image-set(url("../img/pancakes.webp") type("image/webp"),
+  //     url("../img/pancakes.png") type("image/png"));
+  // }
+
+  // @include retina {
+  //   &::after {
+  //     width: 286px;
+  //     background-image: image-set(url("../img/pancakes@2x.webp") type("image/webp"),
+  //     url("../img/pancakes@2x.png") type("image/png"));
+  //     background-size: cover;
+  //   }
+  // }
+
+  // @include vp-1199 {
+  //   padding: 104px 163px 100px;
+
+  //   &::after {
+  //     width: 348px;
+  //     height: 395px;
+  //     bottom: -114px;
+  //     right: -8px;
+  //     background-image: image-set(url("../img/pancakes-tablet.webp") type("image/webp"),
+  //     url("../img/pancakes-tablet.png") type("image/png"));
+  //   }
+
+  //   @include retina {
+  //     &::after {
+  //       background-image: image-set(url("../img/pancakes-tablet@2x.webp") type("image/webp"),
+  //       url("../img/pancakes-tablet@2x.png") type("image/png"));
+  //       background-size: cover;
+  //     }
+  //   }
+  // }
+
+  // @include vp-767 {
+  //   padding: 66px 15px 70px;
+
+  //   &::after {
+  //     content: none;
+  //     background: none;
+  //   }
+  // }
 }
 
 .subscriptoin__wrapper h3{
@@ -95,7 +151,7 @@
   }
 
   @include vp-1199 {
-        margin-bottom: 56px;
+        margin-bottom: 20px;
         column-gap: 44px;
 
         &::after {
@@ -145,6 +201,21 @@
       width: 100%;
       height: 2px;
       background-color: #d10a42;
+    }
+  }
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    font-size: 16px;
+
+    @include hover-focus {
+      &::after {
+        bottom: -14px;
+      }
     }
   }
 }
@@ -215,6 +286,11 @@
   @include vp-767 {
     padding: 46px 40px 55px;
     width: 290px;
+
+    @include hover-focus {
+      padding-top: 39px;
+      padding-bottom: 48px;
+    }
   }
 }
 
@@ -283,7 +359,12 @@
     color: rgba(255, 255, 255, 0.7);
   }
 
-  @include vp-767 {
-    padding: 25px;
-  }
+  // @include vp-767 {
+  //   padding: 25px;
+
+  //   &:hover,
+  //   &:focus-visible {
+  //     box-sizing: border-box;
+  //   }
+  // }
 }

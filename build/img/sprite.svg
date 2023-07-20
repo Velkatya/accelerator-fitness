@@ -21,14 +21,14 @@
 </g></symbol><symbol id="acc-hover-focus" viewBox="0 0 42 42"><g fill="none">
 <circle cx="21" cy="21" r="21" fill="#102654"/>
 <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="white"/>
-</g></symbol><symbol id="arrow-left-active" viewBox="0 0 58 58"><g fill="none">
+</g></symbol><symbol id="arrow-active" viewBox="0 0 58 58"><g fill="none">
 <circle cx="29" cy="29" r="28" fill="#102654" stroke="#102654"/>
 <path d="M35 13L19 29L35 45" stroke="white"/>
-</g></symbol><symbol id="arrow-left-default" viewBox="0 0 18 34"><g fill="none">
+</g></symbol><symbol id="arrow-default" viewBox="0 0 18 34"><g fill="none">
 <path d="M17 1L0.999999 17L17 33" stroke="#102654"/>
-</g></symbol><symbol id="arrow-left-disabled" viewBox="0 0 18 34"><g fill="none">
+</g></symbol><symbol id="arrow-disabled" viewBox="0 0 18 34"><g fill="none">
 <path opacity="0.3" d="M17 1L0.999999 17L17 33" stroke="#102654"/>
-</g></symbol><symbol id="arrow-left-hover-focus" viewBox="0 0 58 58"><g fill="none">
+</g></symbol><symbol id="arrow-hover-focus" viewBox="0 0 58 58"><g fill="none">
 <circle cx="29" cy="29" r="28" stroke="#102654"/>
 <path d="M35 13L19 29L35 45" stroke="#102654"/>
 </g></symbol><symbol id="arrow" viewBox="0 0 22 22"><g fill="none">

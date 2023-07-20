@@ -3,8 +3,9 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 @import "vendor/data-tabs";
+@import "vendor/accordion-global";
 
 // Global
 // ---------------------------------
@@ -19,6 +20,7 @@
 // Blocks
 // ---------------------------------
 
+@import "blocks/accordion";
 @import "blocks/btn";
 @import "blocks/modal";
 @import "blocks/custom-input";
@@ -29,6 +31,11 @@
 @import "blocks/footer";
 @import "blocks/gym";
 @import "blocks/subscription";
+@import "blocks/super-games";
+@import "blocks/trainers";
+@import "blocks/advantages";
+@import "blocks/promotion";
+@import "blocks/faq";
 
 // ---------------------------------
 

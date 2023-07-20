@@ -1,0 +1,303 @@
+.trainers__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 105px;
+  max-width: 1366px;
+  width: 100%;
+
+  @include vp-1199 {
+    padding: 5px 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 6px 15px 50px;
+  }
+}
+
+.trainers h3 {
+  @include h3-header;
+  margin: 0;
+  padding: 106px 0 48px 103px;
+
+  @include vp-1199 {
+    margin: 0 0 35px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 46px;
+    padding-top: 0;
+  }
+}
+
+.trainers__swiper {
+  width: 1160px;
+  height: 294px;
+
+  @media (min-width: $vp-1200) and (max-width: 1360px) {
+    width: 1055px;
+  }
+
+  @include vp-1199 {
+    padding-left: 4px;
+    width: 576px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    width: 226px;
+  }
+}
+
+.trainers__slide {
+  position: relative;
+  margin: 0 auto;
+  cursor: grab;
+
+  @include vp-767 {
+    height: 274px;
+  }
+}
+
+.trainers__slide img {
+  display: flex;
+  object-fit: cover;
+  background-color: $bg-color-light-grey;
+}
+
+.trainers__swiper-button {
+  position: absolute;
+  top: 52%;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 32px;
+  z-index: 2;
+  cursor: pointer;
+
+  &--prev {
+    left: 27px;
+    padding-top: 70px;
+    // transform: translate(0, -100%);
+    transform: scaleY(-1);
+    background-image: url("../img/sprite/arrow-default.svg");
+
+    &:hover,
+    &:focus {
+      left: 29px;
+      background-image: url("../img/sprite/arrow-hover-focus.svg");
+      background-size: 56px 56px;
+      outline: none;
+    }
+
+    &:active {
+      background-image: url("../img/sprite/arrow-active.svg");
+      background-size: 56px 56px;
+    }
+
+  }
+
+  &--next {
+    right: 27px;
+    padding-top: 70px;
+    background-image: url("../img/sprite/arrow-default.svg");
+    transform: scaleX(-1);
+
+    &:hover,
+    &:focus {
+      right: 29px;
+      background-image: url("../img/sprite/arrow-hover-focus.svg");
+      background-size: 56px 56px;
+      outline: none;
+
+    }
+
+    &:active {
+      background-image: url("../img/sprite/arrow-active.svg");
+      background-size: 56px 56px;
+
+    }
+  }
+
+  @media (min-width: $vp-1200) and (max-width: 1360px) {
+    &--prev {
+      left: 1%;
+
+      &:hover,
+      &:focus {
+        left: 1.2%;
+      }
+    }
+
+    &--next {
+      right: 1%;
+
+      &:hover,
+      &:focus {
+        right: 1.2%;
+      }
+    }
+  }
+
+  @include vp-1199 {
+    top: 55%;
+    &--prev {
+      left: 12%;
+
+      &:hover,
+      &:focus {
+        left: 12%;
+      }
+    }
+
+    &--next {
+      right: 12%;
+
+      &:hover,
+      &:focus {
+        right: 12%;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 900px) {
+    &--prev {
+      left: 5%;
+
+      &:hover,
+      &:focus {
+        left: 5%;
+      }
+    }
+
+    &--next {
+      right: 5%;
+
+      &:hover,
+      &:focus {
+        right: 5%;
+      }
+    }
+  }
+
+  @include vp-767 {
+    top: 51%;
+    &--prev {
+      left: 55px;
+
+      &:hover,
+      &:focus {
+        left: 55px;;
+      }
+    }
+
+    &--next {
+      right: 55px;
+
+      &:hover,
+      &:focus {
+        right: 55px;;
+      }
+    }
+  }
+}
+
+.trainers__slide > p {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 260px;
+  font-weight: 700;
+  text-align: center;
+  color: $color-white;
+  z-index: 5;
+
+  @include text-large;
+
+  @include vp-767 {
+    width: 226px;
+  }
+}
+
+.trainers__slide:hover > p {
+  display: none;
+}
+
+.trainers__info {
+  display: none;
+  position: absolute;
+  padding: 55px 40px 50px;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  color: $color-white;
+  background-color: rgba(16, 38, 84, 0.89);
+  overflow: scroll;
+
+  @include vp-1199 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    padding: 46px 20px 28px;
+    width: 226px;
+  }
+
+  @include text-small;
+}
+
+.trainers__slide:hover .trainers__info {
+  display: block;
+}
+
+.trainers__info > p {
+  position: static;
+  margin: 0 0 2px;
+  font-weight: 700;
+  text-align: center;
+
+  @include text-large;
+}
+
+.trainers__info span {
+  margin: 0 0 34px;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  color: #b6bdcc;
+
+  @include vp-767 {
+    margin: 0 0 34px;
+  }
+}
+
+.trainers__description {
+  margin: 0;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  row-gap: 12px;
+
+  @include vp-767 {
+    padding-left: 31px;
+  }
+}
+
+.trainers__item {
+  position: relative;
+}
+
+.trainers__item::before {
+  position: absolute;
+  content: "";
+  left: -17px;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $color-white;
+}
