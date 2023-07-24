@@ -4,7 +4,7 @@
 .hero__wrapper {
   margin: 0 auto;
   display: flex;
-  gap: 64px;
+  gap: 69px;
   max-width: 1366px;
   padding: 51px 303px 51px 122px;
 
@@ -28,6 +28,7 @@
   grid-template-columns: auto 1fr;
   text-align: right;
 
+
   @include vp-1199 {
     padding: 58px 0 0;
     column-gap: 8px;
@@ -41,7 +42,7 @@
 }
 
 .hero__information h1 {
-  margin: 0 0 4px;
+  margin: 0 0 6px;
   text-transform: uppercase;
   grid-column: 2/3;
   width: 250px;
@@ -62,8 +63,8 @@
 
 .hero__information p {
   margin: 0 0 -12px;
-  padding-right: 51px;
-  padding-bottom: 12px;
+  padding-right: 47px;
+  padding-bottom: 5px;
   font-family: $ff-primary;
   font-size: 48px;
   font-weight: 600;
@@ -87,7 +88,7 @@
 
 .hero__list {
   margin: 0;
-  padding: 40px 7px 0 0;
+  padding: 34px 10px 0 0;
   grid-column: 1/2;
   grid-row: 2/3;
   align-self: center;
@@ -115,7 +116,7 @@
 }
 
 .hero__button {
-  padding:24px 56px 24px 57px;
+  padding:20px 54px;
 
   @include button-regular;
   @include button-white;
@@ -156,3 +157,145 @@
     width: 115px;
 }
 
+
+
+
+
+
+// .hero__info {
+//   padding: 127px 0 0;
+//   display: grid;
+//   grid-template-columns: 129px 248px;
+//   text-align: right;
+
+//   @include vp-1199 {
+//     padding: 58px 0 0;
+//     grid-template-columns: 129px 187px;
+//     column-gap: 8px;
+//   }
+
+//   @include vp-767 {
+//     margin: 0 auto;
+//     padding: 52px 0 0;
+//     grid-template-columns: 113px 188px;
+//     column-gap: 0;
+//   }
+// }
+
+// .hero__info p {
+//   margin: 0 0 -11px;
+//   padding-right: 51px;
+//   font-family: $ff-primary;
+//   font-size: 48px;
+//   font-weight: 600;
+//   letter-spacing: 0.09rem;
+//   text-transform: lowercase;
+//   grid-column: 2/3;
+
+//   @include vp-1199 {
+//     margin: 0 0 5px;
+//     padding-right: 4px;
+//     font-size: 34px;
+//   }
+
+//   @include vp-767 {
+//     margin-bottom: 30px;
+//     padding-right: 9px;
+//     font-size: 28px;
+//     letter-spacing: 0.05rem;
+//   }
+// }
+
+// .hero__info h1 {
+//   margin: 0;
+//   align-self: flex-end;
+//   text-transform: uppercase;
+//   grid-column: 2/3;
+
+//   @include heading-h1;
+
+//   @include vp-1199 {
+//     margin-top: -12px;
+//     margin-bottom: 8px;
+//     text-transform: none;
+//   }
+
+//   @include vp-767 {
+//     position: relative;
+//     margin-bottom: 22px;
+//     padding-right: 0;
+//     right: 6px;
+//   }
+// }
+
+// .hero__list {
+//   margin: 0;
+//   padding: 110px 16px 0 0;
+//   grid-column: 1/2;
+//   grid-row: 2/3;
+//   list-style-type: none;
+//   align-self: center;
+//   text-align: right;
+
+//   @include text-small;
+
+//   @include vp-1199 {
+//     padding-top: 59px;
+//   }
+
+//   @include vp-767 {
+//     position: relative;
+//     padding-top: 13px;
+//     padding-right: 0;
+//     left: 4px;
+//   }
+// }
+
+// .hero__btn {
+//   padding: 20px 54px;
+//   justify-self: flex-end;
+//   align-self: flex-start;
+//   color: $color-white;
+//   text-transform: uppercase;
+//   background-color: transparent;
+//   border: 4px solid $border-color-white;
+//   grid-column: 1/2;
+
+//   @include btn-regular;
+
+//   &:hover,
+//   &:focus {
+//     color: $color-persian-blue;
+//     background-color: $color-white;
+//     outline: none;
+//   }
+
+//   &:active {
+//     color: $color-primary;
+//   }
+
+//   @include vp-1199 {
+//     padding: 21px 31px;
+//     width: auto;
+//   }
+
+//   @include vp-767 {
+//     margin: 0 15px 0;
+//     padding: 22px 20px;
+//     width: calc(100% - 30px);
+//     text-align: center;
+//   }
+// }
+
+// .hero picture {
+//   grid-row: 1/3;
+//   grid-column: 2/3;
+// }
+
+// .hero img {
+//   object-fit: cover;
+
+//   @include vp-767 {
+//     display: none;
+//   }
+// }
