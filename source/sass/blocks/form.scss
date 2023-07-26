@@ -13,11 +13,14 @@
   padding: 71px 0 22px 103px;
 
   @include vp-1199 {
-    padding-left: 133px;
+    padding-top: 67px;
+    padding-left: 134px;
+    padding-bottom: 27px;
   }
 
   @include vp-767 {
     padding-left: 0;
+    padding-bottom: 30px;
   }
 }
 
@@ -46,10 +49,15 @@
     &::placeholder {
       color: $color-transperent;
     }
-}
+  }
 
   &::placeholder {
     color: $color-white;
+  }
+
+  @include vp-1199 {
+    padding: 7px 0;
+    margin-bottom: 3px;
   }
 
   @include vp-767 {
@@ -76,23 +84,18 @@
 
   @include vp-1199 {
     padding-left: 133px;
+    padding-bottom: 25px;
+    gap: 79px;
   }
 
   @include vp-767 {
     flex-direction: column;
     width: 100%;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 24px;
+    gap: 21px;
   }
 }
-
-// .form__name {
-// }
-// .form__input {
-// }
-// .form__phone {
-// }
-
 
 .form__submit {
   width: 410px;
@@ -117,6 +120,7 @@
 
   @include vp-1199 {
     margin-left: 133px;
+    width: 472px;
   }
 
   @include vp-767 {

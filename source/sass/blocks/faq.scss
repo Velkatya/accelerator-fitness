@@ -34,6 +34,7 @@
 
 .faq__tabs {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 40px;
 
   @include vp-1199 {

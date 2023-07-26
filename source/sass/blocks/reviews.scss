@@ -135,6 +135,7 @@
     &:focus-visible {
       background: url("../img/sprite/arrow-hover-focus.svg");
       background-size: 56px 56px;
+      background-position: center;
       outline: none;
     }
 
@@ -161,36 +162,37 @@
       background-size: 56px 56px;
     }
   }
-}
 
-  // @include vp-1199 {
-  //   top: 58%;
+  @include vp-1199 {
+    top: 58%;
 
-  //   &--prev {
-  //     left: 25px;
-  //   }
+    &--prev {
+      left: 25px;
+    }
 
-  //   &--next {
-  //     right: 25px;
-  //   }
-  // }
+    &--next {
+      right: 25px;
+    }
+  }
 
-  // @include vp-767 {
-  //   top: 58%;
-  //   width: 20px;
-  //   height: 20px;
-  //   background-size: 10px 19px;
-  //   transform: translate(0, -48%);
 
-  //   &--prev {
-  //     left: 80px;
-  //   }
+  @include vp-767 {
+    top: 58%;
+    // width: 20px;
+    // height: 20px;
+    background-size: 10px 19px;
+    transform: translate(0, -48%);
 
-  //   &--next {
-  //     right: 80px;
-  //   }
-  // }
+    &--prev {
+      left: 10px;
+    }
 
+    &--next {
+      right: 10px;
+      transform: translate(0, -48%) scaleX(-1);
+    }
+  }
+  }
 
 
 .reviews__swiper-button--prev.reviews__button-disabled {
@@ -198,6 +200,10 @@
   background-size: 16px 32px;
   background-repeat: no-repeat;
   pointer-events: none;
+
+  @include vp-767 {
+    background-size: 10px 19px;
+  }
 }
 
 .reviews__swiper-button--next.reviews__button-disabled {
@@ -205,4 +211,8 @@
   background-size: 16px 32px;
   background-repeat: no-repeat;
   pointer-events: none;
+
+  @include vp-767 {
+    background-size: 10px 19px;
+  }
 }

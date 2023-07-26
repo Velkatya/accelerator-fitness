@@ -10,12 +10,11 @@
     padding: 100px 42px 183px;
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // text-align: center;
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 62px 0;
+    padding-bottom: 72px;
     text-align: left;
   }
 }
@@ -30,11 +29,14 @@
   text-transform: none;
 
   @include vp-1199 {
+    padding-top: 0;
+    padding-bottom: 3px;
     text-align: center;
   }
 
   @include vp-767 {
-    text-align: left;
+    text-align: start;
+    padding-bottom: 9px;
   }
 }
 
@@ -60,11 +62,15 @@
 
   @include vp-1199 {
     text-align: center;
+    padding-bottom: 39px;
   }
 
-  // @include vp-767 {
-  //   margin-bottom: 28px;
-  // }
+  @include vp-767 {
+    margin-bottom: 27px;
+    padding-bottom: 0;
+    letter-spacing: 0;
+    text-align: start;
+  }
 }
 
 .gym__info p {
@@ -78,6 +84,7 @@
   }
 
   @include vp-767 {
+    width: 258px;
     margin-bottom: 35px;
     text-align: left;
   }
@@ -86,10 +93,6 @@
 .gym__info p + p {
   @include vp-1199 {
     display: none;
-  }
-
-  @include vp-767 {
-    display: block;
   }
 }
 

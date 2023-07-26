@@ -94,7 +94,7 @@
   }
 
   @include vp-767 {
-    top: 52px;
+    top: 30px;
     width: 32px;
     height: 32px;
 
@@ -125,6 +125,7 @@
 
   @include vp-1199 {
     padding-right: 160px;
+    margin-top: -36px;
   }
 
   @include vp-767 {
