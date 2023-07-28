@@ -32,7 +32,7 @@
   margin: 0;
   padding-top: 85px;
   padding-bottom: 35px;
-  font-family: Alumni Sans;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 82px;
   font-style: normal;
   font-weight: 600;
@@ -125,7 +125,7 @@
   }
 }
 
-.super-games__time span{
+.super-games__time span {
   font-size: 40px;
   font-weight: 700;
   line-height: 150%; /* 60px */
@@ -137,7 +137,7 @@
   }
 }
 
-.super-games__time p{
+.super-games__time p {
   margin: 0;
 
   @include vp-1199 {

@@ -97,8 +97,8 @@
 .advantages__item.advantages__item--top-cell {
   padding-bottom: 157px;
 
-    @include vp-1199 {
-      padding-bottom: 19px;
+  @include vp-1199 {
+    padding-bottom: 19px;
   }
 }
 
@@ -166,7 +166,7 @@
   width: 240px;
   padding: 66px 34px 65px;
   text-align: center;
-  background-color: #1C3374;
+  background-color: #1c3374;
   color: $color-white;
   display: block;
   grid-column: 2/3;
@@ -200,13 +200,13 @@
   width: 134px;
   margin: 0 auto;
 
-    @include vp-1199 {
-      font-size: 74px;
-      width: 103px;
-      padding-bottom: 0;
-      padding-top: 20px;
-      line-height: 100%;
-      text-align: center;
+  @include vp-1199 {
+    font-size: 74px;
+    width: 103px;
+    padding-bottom: 0;
+    padding-top: 20px;
+    line-height: 100%;
+    text-align: center;
   }
 
   @include vp-767 {
@@ -262,11 +262,11 @@
   }
 }
 
-.advantages__content-left{
+.advantages__content-left {
   width: 183px;
 }
 
-.advantages__item.advantages__item--left-cell{
+.advantages__item.advantages__item--left-cell {
   width: 354px;
 
   @include vp-1199 {

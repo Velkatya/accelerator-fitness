@@ -74,6 +74,7 @@
   position: relative;
   padding: 0;
   color: $color-white;
+
   @include text-small;
 
   @include vp-767 {

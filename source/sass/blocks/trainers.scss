@@ -96,7 +96,6 @@
       background-image: url("../img/sprite/arrow-active.svg");
       background-size: 56px 56px;
     }
-
   }
 
   &--next {
@@ -111,13 +110,11 @@
       background-image: url("../img/sprite/arrow-hover-focus.svg");
       background-size: 56px 56px;
       outline: none;
-
     }
 
     &:active {
       background-image: url("../img/sprite/arrow-active.svg");
       background-size: 56px 56px;
-
     }
   }
 
@@ -143,6 +140,7 @@
 
   @include vp-1199 {
     top: 51%;
+
     &--prev {
       left: 12%;
 
@@ -184,13 +182,14 @@
 
   @include vp-767 {
     top: 51%;
+
     &--prev {
       left: -7px;
 
       &:hover,
       &:focus {
         background-size: 30px 30px;
-        left: -7px;;
+        left: -7px;
       }
     }
 
@@ -200,7 +199,7 @@
       &:hover,
       &:focus {
         background-size: 30px 30px;
-        right: -7px;;
+        right: -7px;
       }
     }
   }

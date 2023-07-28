@@ -7,9 +7,10 @@
 
 .form h3 {
   margin: 0;
+
   @include h3-header;
   color: $color-white;
-  letter-spacing: .14rem;
+  letter-spacing: 0.14rem;
   padding: 71px 0 22px 103px;
 
   @include vp-1199 {
@@ -24,7 +25,7 @@
   }
 }
 
-.form input{
+.form input {
   margin-bottom: 4px;
   padding: 9px 0;
   width: 190px;
@@ -63,7 +64,6 @@
   @include vp-767 {
     width: 100%;
   }
-
 }
 
 .form__name.is-invalid input,

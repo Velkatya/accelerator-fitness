@@ -2,7 +2,7 @@
   position: relative;
   background-color: $bg-color-light-grey;
 
-    &::after {
+  &::after {
     position: absolute;
     content: "";
     right: 0;
@@ -32,7 +32,7 @@
       width: 348px;
       height: 395px;
       bottom: -101px;
-      right: 0px;
+      right: 0;
       background-image: image-set(url("../img/pancakes-tablet.webp") type("image/webp"),
       url("../img/pancakes-tablet.png") type("image/png"));
     }
@@ -69,9 +69,10 @@
   }
 }
 
-.subscription__wrapper h3{
+.subscription__wrapper h3 {
   margin: 0;
   padding-bottom: 23px;
+
   @include h3-header;
   text-align: center;
 }
@@ -102,23 +103,23 @@
   }
 
   @include vp-1199 {
-        margin-bottom: 20px;
-        column-gap: 44px;
+    margin-bottom: 20px;
+    column-gap: 44px;
 
-        &::after {
-          width: 332px;
-          bottom: -13px;
-        }
-      }
+    &::after {
+      width: 332px;
+      bottom: -13px;
+    }
+  }
 
-      @include vp-767 {
-        margin-bottom: 49px;
+  @include vp-767 {
+    margin-bottom: 49px;
 
-        &::after {
-          width: 290px;
-          bottom: -15px;
-        }
-      }
+    &::after {
+      width: 290px;
+      bottom: -15px;
+    }
+  }
 }
 
 .subscription__control.is-active {
@@ -154,6 +155,7 @@
 
   @include hover-focus {
     color: $color-primary;
+
     &::after {
       position: absolute;
       content: "";
@@ -167,6 +169,7 @@
 
   @include active {
     color: $color-primary;
+
     &::after {
       position: absolute;
       content: "";
@@ -217,6 +220,7 @@
     padding-top: 0;
   }
 }
+
 .subscription__element-wrapper {
   box-sizing: border-box;
   position: relative;
@@ -254,7 +258,7 @@
   }
 }
 
-.subscription__element-wrapper h4{
+.subscription__element-wrapper h4 {
   @include h4-header;
   text-align: center;
   padding-bottom: 11px;
@@ -279,8 +283,8 @@
   }
 }
 
-.subscription__price-wrapper span{
-  color: #E8E8E8;
+.subscription__price-wrapper span {
+  color: #e8e8e8;
   font-size: 100px;
   font-weight: 700;
   position: relative;
@@ -292,11 +296,11 @@
   transform: translate(-50%, -18px);
 
   @include vp-767 {
-  font-size: 80px;
+    font-size: 80px;
   }
 }
 
-.subscription__price-wrapper p{
+.subscription__price-wrapper p {
   position: relative;
   margin: 0;
   margin-bottom: -6px;
@@ -340,6 +344,7 @@
   text-transform: uppercase;
   color: $color-primary;
   border: 2px solid $color-primary;
+
   @include button-regular;
 
   &:hover,

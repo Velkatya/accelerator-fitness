@@ -23,6 +23,7 @@
   margin: 0;
   padding-top: 40px;
   padding-bottom: 10px;
+
   @include h2-header;
   font-size: 48px;
   letter-spacing: 1.44px;
@@ -57,6 +58,7 @@
 
 .gym__info span {
   display: block;
+
   @include text-large;
   padding-bottom: 43px;
 
