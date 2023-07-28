@@ -19,4 +19,3 @@ if (video) {
   video.addEventListener('click', videoOnclick);
   videoBtn.addEventListener('click', videoBtnPress);
 }
-

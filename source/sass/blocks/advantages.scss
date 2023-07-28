@@ -279,7 +279,7 @@
   }
 }
 
-.advantages__quantity--central-cell .advantages__quantity span:nth-child(2) {
+.advantages__quantity--central-cell .advantages__quantity span + span {
   font-size: 26px;
   font-weight: 700;
   display: block;
