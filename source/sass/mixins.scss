@@ -142,6 +142,28 @@
   line-height: 22px;
 }
 
+@mixin title {
+  margin: 0;
+
+  font-family: $ff-primary;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    line-height: 38px;
+  }
+}
+
 @mixin title-primary {
   margin: 0;
 

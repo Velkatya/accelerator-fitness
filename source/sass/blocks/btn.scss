@@ -11,7 +11,7 @@
   }
 }
 
-btn--primary {
+.btn--primary {
   color: $color-white;
 
   background-color: $color-transperent;
@@ -37,3 +37,89 @@ btn--primary {
     opacity: 0.5;
   }
 }
+
+.btn--play {
+  position: relative;
+
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  border-radius: 50%;
+  border: none;
+  background-image: linear-gradient(-120deg,#ed0233 0,#003eb7 100%);
+  background-color: $color-transperent;
+
+  transition: background-color $trans-default;
+
+  &::after {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    background: $color-primary;
+    mask-image: url("../img/ellipse-big.svg");
+    opacity: 0.2;
+    border-radius: 50%;
+
+    content: "";
+    transition: opacity $trans-default;
+  }
+
+  @include hover-focus {
+    background-color: $color-white;
+    background-image: none;
+    background-size: 0;
+
+    &::after {
+      background: $color-primary;
+      opacity: 1;
+    }
+  }
+
+  @include active {
+    background: $color-white;
+
+    &::after {
+      background: $color-primary;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    background: $color-white;
+
+    &::after {
+      background: $color-primary;
+      opacity: 1;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    background: $color-white;
+
+    &::after {
+      background: $color-primary;
+      opacity: 0.4;
+    }
+  }
+
+  @include vp-1199 {
+    width: 52px;
+    height: 52px;
+
+    &::after {
+      width: 73px;
+      height: 73px;
+
+      mask-image: url("../img/ellipse-small.svg");
+    }
+  }
+}
+
+
