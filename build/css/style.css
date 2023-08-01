@@ -2658,6 +2658,7 @@ ul {
 .subscription {
   position: relative;
   background-color: #f8f9fc;
+  margin-bottom: 119px;
 }
 .subscription::after {
   position: absolute;
@@ -2683,6 +2684,7 @@ ul {
 @media (max-width: 1199px) {
   .subscription {
     padding: 104px 163px 100px;
+    margin-bottom: 101px;
   }
   .subscription::after {
     width: 348px;
@@ -2703,6 +2705,7 @@ ul {
 @media (max-width: 767px) {
   .subscription {
     padding: 68px 15px 70px;
+    margin-bottom: 69px;
   }
   .subscription::after {
     content: none;
@@ -3157,26 +3160,33 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 119px;
-}
-@media (max-width: 1199px) {
-  .super-games {
-    padding-top: 101px;
-  }
 }
 @media (max-width: 767px) {
   .super-games {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 69px;
+    display: block;
+    background-color: #ffffff;
+  }
+}
+
+.super-games__decor-wrapper {
+  background-color: #ed0233;
+}
+@media (max-width: 767px) {
+  .super-games__decor-wrapper {
+    display: block;
+    background-color: #ed0233;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .super-games__decor-wrapper {
+    width: 290px;
+    margin: 0 auto;
   }
 }
 
 .super-games__info {
   width: 500px;
-  background-color: #ed0233;
   color: #ffffff;
 }
 @media (max-width: 1199px) {
@@ -3188,6 +3198,7 @@ ul {
   .super-games__info {
     width: 290px;
     margin: 0 auto;
+    background-color: #ed0233;
   }
 }
 
@@ -3370,7 +3381,9 @@ ul {
 }
 @media (max-width: 767px) {
   .super-games__button {
-    margin-bottom: 50px;
+    background-color: #ed0233;
+    margin-bottom: 0;
+    width: 71%;
   }
 }
 .super-games__button:hover, .super-games__button:focus-visible {
@@ -3396,6 +3409,22 @@ ul {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 767px) {
+  .super-games img {
+    display: block;
+    width: 100%;
+    height: 292px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 320px) {
+  .super-games img {
+    width: 290px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
 }
 
 .trainers__wrapper {
