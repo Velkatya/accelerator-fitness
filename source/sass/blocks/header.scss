@@ -44,14 +44,14 @@
   width: 154px;
 
   @include vp-1199 {
-    width: 138px;
+    width: 149px;
     padding-right: 0;
     font-size: 24px;
     align-self: center;
   }
 
   @include vp-767 {
-    width: 115px;
+    width: 122px;
     font-size: 20px;
     align-self: flex-start;
   }

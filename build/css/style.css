@@ -2025,7 +2025,7 @@ ul {
 }
 @media (max-width: 1199px) {
   .header__phone {
-    width: 138px;
+    width: 149px;
     padding-right: 0;
     font-size: 24px;
     -ms-flex-item-align: center;
@@ -2035,7 +2035,7 @@ ul {
 }
 @media (max-width: 767px) {
   .header__phone {
-    width: 115px;
+    width: 122px;
     font-size: 20px;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -2123,6 +2123,7 @@ ul {
   gap: 40px;
   width: 431px;
   color: #ffffff;
+  margin-left: 10px;
 }
 @media (max-width: 1199px) {
   .footer__list {
@@ -2130,6 +2131,7 @@ ul {
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
+    margin-left: 21px;
   }
 }
 @media (max-width: 767px) {
@@ -2138,6 +2140,7 @@ ul {
     display: block;
     margin-bottom: 54px;
     padding: 0;
+    margin-left: 0;
   }
 }
 
@@ -3621,7 +3624,7 @@ ul {
   grid-template-columns: auto 1fr;
   gap: 30px;
   grid-column: -2/-1;
-  padding: 0 0 23px;
+  padding: 0 0 27px;
   color: #102654;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
@@ -4155,7 +4158,7 @@ ul {
 }
 @media (max-width: 767px) {
   .reviews__wrapper {
-    padding: 66px 15px 69px;
+    padding: 65px 15px 69px;
   }
 }
 
@@ -4427,10 +4430,10 @@ ul {
   .contacts__actual {
     width: 510px;
     margin-left: 133px;
-    margin-bottom: 65px;
+    margin-bottom: 42px;
   }
 }
-@media (min-width: 768px) and (max-width: 1198px) {
+@media (min-width: 769px) and (max-width: 1198px) {
   .contacts__actual {
     width: 510px;
     margin: 0 auto;
@@ -4784,7 +4787,7 @@ ul {
 
 .form__submit {
   width: 410px;
-  margin: 0 0 70px 103px;
+  margin: 0 0 67px 103px;
   padding: 18px 0;
   color: #ffffff;
   background-color: transparent;
@@ -4833,7 +4836,7 @@ ul {
 }
 @media (max-width: 1199px) {
   .faq__wrapper {
-    padding: 104px 45px 101px;
+    padding: 104px 45px 72px;
   }
 }
 @media (max-width: 767px) {
