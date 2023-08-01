@@ -1,164 +1,144 @@
 .contacts {
-  flex-wrap: wrap;
+  padding: 60px 60px 60px 98px;
   display: flex;
-  max-width: 1366px;
-  margin: 0 auto;
-
+  flex-direction: column;
+  width: 50%;
 
   @include vp-1199 {
-    flex-direction: column;
-
-  }
-}
-
-.contacts__actual {
-  @include vp-1199 {
-    width: 510px;
-    margin-left: 133px;
-    margin-bottom: 42px;
-  }
-
-  @media (min-width: 769px) and (max-width: 1198px) {
-    width: 510px;
-    margin: 0 auto;
-    margin-bottom: 65px;
+    padding: 65px 60px 63px 133px;
+    width: 100%;
   }
 
   @include vp-767 {
-    width: 100%;
-    margin-left: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 42px;
+    padding: 66px 15px 61px;
   }
 }
 
 .contacts__wrapper {
-  margin-left: 124px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 480px;
 
   @include vp-1199 {
-    margin: 0;
+    width: 575px;
   }
 
   @include vp-767 {
-    flex-direction: column;
-  }
-}
-
-.contacts__wrapper p {
-  margin: 0;
-}
-
-.contacts__form {
-  width: 50%;
-  background-color: $color-primary;
-
-  @include vp-1199 {
     width: 100%;
   }
 }
 
-.contacts__actual h3 {
-  margin: 0;
-
+.contacts h3 {
   @include h3-header;
-  padding: 62px 0 22px 120px;
+
+  margin: 0 0 42px;
+  letter-spacing: 0.03em;
 
   @include vp-1199 {
-    padding-left: 0;
-    padding-bottom: 42px;
+    margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 38px;
   }
 }
 
-.contacts__work-time p {
+.contacts__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 100px;
+  list-style-type: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 234px;
+    height: 90%;
+    width: 1px;
+    background-color: #74819c;
+  }
+
+  @include vp-1199 {
+    gap: 20px 88px;
+
+    &::after {
+      top: 9px;
+      left: 266px;
+    }
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 22px 88px;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.contacts__item {
+  padding-left: 4px;
+  width: 190px;
+
+  @include vp-1199 {
+    padding: 0;
+    width: 225px;
+  }
+
+  @include vp-767 {
+    &--adress {
+      order: 1;
+    }
+
+    &--tel {
+      order: 3;
+    }
+
+    &--worktime {
+      order: 2;
+    }
+
+    &--email {
+      order: 4;
+    }
+  }
+}
+
+.contacts__item h4 {
+  margin: 0 0 2px;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+
+  @include vp-1199 {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+}
+
+.contacts__item p,
+.contacts__item a {
+  margin: 0;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 152.34%; /* 21.328px */
+  line-height: 22px;
 
   @include vp-1199 {
     font-size: 18px;
   }
 }
 
-.contacts__work-time h4 {
-  margin-top: -15px;
-  margin-bottom: 7px;
-
-  @include vp-1199 {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
+.contacts__item a {
+  &:hover,
+  &:focus-visible {
+    border-bottom: 1px solid $color-primary;
+    outline: 0;
   }
 
-  @include vp-1199 {
-    margin-bottom: 4px;
-  }
-}
-
-.contacts__address p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 152.34%; /* 21.328px */
-
-  @include vp-1199 {
-    font-size: 18px;
-  }
-}
-
-.contacts__address h4 {
-  margin-bottom: 5px;
-
-  @include vp-1199 {
-    font-size: 20px;
-    margin-top: 0;
-  }
-
-  @include vp-767 {
-    margin-top: 4px;
-  }
-}
-
-.contacts__left {
-  width: 232px;
-  padding-right: 60px;
-  border-right: 1px solid #74819c;
-
-  @include vp-1199 {
-    padding-right: 5px;
-    width: 267px;
-  }
-
-  @include vp-767 {
-    width: 266px;
-    border: none;
-    padding-bottom: 24px;
-  }
-}
-
-.contacts__address {
-  margin-bottom: 30px;
-
-  @include vp-1199 {
-    margin-bottom: 28px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 25px;
-  }
-}
-
-.contacts__right {
-  padding-left: 60px;
-  width: 230px;
-
-  @include vp-1199 {
-    padding-left: 47px;
-  }
-
-  @include vp-767 {
-    padding-left: 0;
+  &:active {
+    opacity: 0.7;
   }
 }

@@ -10,3 +10,30 @@
     pointer-events: none;
   }
 }
+
+btn--primary {
+  color: $color-white;
+
+  background-color: $color-transperent;
+  border: 4px solid $color-white;
+
+  @include hover-focus {
+    color: $color-bright-blue;
+
+    background-color: $color-white;
+
+    &:active {
+      color: $color-primary;
+    }
+  }
+
+  &:active {
+    color: $color-primary;
+
+    background-color: $color-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
