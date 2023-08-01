@@ -1,11 +1,13 @@
 .contacts {
   flex-wrap: wrap;
   display: flex;
-  width: 100%;
+  max-width: 1366px;
   margin: 0 auto;
+
 
   @include vp-1199 {
     flex-direction: column;
+
   }
 }
 
@@ -16,16 +18,24 @@
     margin-bottom: 65px;
   }
 
+  @media (min-width: 768px) and (max-width: 1198px) {
+    width: 510px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+  }
+
   @include vp-767 {
     width: 100%;
     margin-left: 0;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 42px;
   }
 }
 
 .contacts__wrapper {
   margin-left: 124px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
 

@@ -55,6 +55,10 @@
   margin: 0 auto;
   cursor: grab;
 
+  // @media (min-width: 768px) and (max-width: 1198px) {
+  //   width: 240px;
+  // }
+
   @include vp-767 {
     height: 274px;
   }
@@ -64,6 +68,10 @@
   display: flex;
   object-fit: cover;
   background-color: $bg-color-light-grey;
+
+  @media (min-width: 1200px) and (max-width: 1359px) {
+  width: 245px;
+}
 }
 
 .trainers__swiper-button {
@@ -254,6 +262,10 @@
   display: block;
 }
 
+.trainers__slide:focus-visible .trainers__info {
+  display: block;
+}
+
 .trainers__info > p {
   position: static;
   margin: 0 0 2px;
@@ -286,6 +298,14 @@
   @include vp-767 {
     padding-left: 31px;
   }
+
+  // &:hover,
+  // &:focus {
+  //   left: 29px;
+  //   background-image: url("../img/sprite/arrow-hover-focus.svg");
+  //   background-size: 56px 56px;
+  //   outline: none;
+  // }
 }
 
 .trainers__item {

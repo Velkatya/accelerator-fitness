@@ -13,7 +13,7 @@
   padding: 34px 0;
 
   @include vp-1199 {
-    padding: 44px 45px;
+    padding: 47px 45px;
   }
 
   @include vp-767 {
@@ -74,6 +74,8 @@
   position: relative;
   padding: 0;
   color: $color-white;
+  background: none;
+  border: none;
 
   @include text-small;
 
@@ -93,16 +95,26 @@
     }
   }
 
-  @include focus {
+    &:focus-visible {
     outline: 1px solid $color-white;
     outline-offset: 5px;
+  }
+
+  &:active {
+    outline: none;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
 .footer__social-links {
   margin: 0;
   padding: 0;
+  width: 100px;
   display: flex;
+  flex-wrap: wrap;
   gap: 11px;
 
   @include vp-767 {
@@ -120,6 +132,48 @@
   }
 }
 
+
+// .footer__link {
+//   position: relative;
+//   padding: 0;
+//   color: $color-white;
+//   background: none;
+//   border: none;
+
+//   @include text-small;
+
+//   @include vp-767 {
+//     font-size: 16px;
+//   }
+
+//   &:hover {
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       left: 0;
+//       bottom: -5px;
+//       width: 100%;
+//       height: 1px;
+//       background-color: $color-white;
+//     }
+//   }
+
+//   &:focus-visible {
+//     outline: 1px solid $color-white;
+//     outline-offset: 5px;
+//   }
+
+//   &:active {
+//     outline: none;
+
+//     &::after {
+//       content: none;
+//     }
+//   }
+// }
+
+
+
 .footer__social-link {
   display: flex;
   justify-content: center;
@@ -131,13 +185,14 @@
   border: none;
   cursor: pointer;
 
-  @include hover-focus {
+  &:hover,
+  &:focus-visible {
     background-color: $color-bright-blue;
     fill: $color-white;
     outline: none;
   }
 
-  @include active {
+  &:active {
     background-color: $bg-color-primary;
   }
 

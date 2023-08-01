@@ -24,10 +24,11 @@
   }
 
   @include vp-767 {
-    padding: 20px 30px 20px 0;
+    padding: 20px 37px 20px 0;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0;
+    width: 276px;
   }
 }
 
@@ -94,7 +95,7 @@
   }
 
   @include vp-767 {
-    top: 30px;
+    top: 52px;
     width: 32px;
     height: 32px;
 

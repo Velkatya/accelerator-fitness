@@ -1,6 +1,8 @@
 .gym {
   position: relative;
   display: flex;
+  max-width: 1366px;
+  margin: 0 auto;
   // gap: 85px;
   justify-content: space-between;
   padding: 120px 103px 235px 163px;
