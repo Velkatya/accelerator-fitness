@@ -164,24 +164,26 @@
 }
 
 .super-games__button {
+  font-size: 12px;
+  font-weight: 700;
   display: block;
   width: 343px;
   margin: 0 auto;
-  padding: 19px 20px;
+  padding: 25px 20px;
+  line-height: normal;
   margin-bottom: 87px;
   color: $color-white;
   text-align: center;
   background-color: transparent;
   border: 4px solid $color-white;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
 
   @include vp-1199 {
     width: 202px;
     padding: 13px 20px;
     font-size: 10px;
-    font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.5px;
-    text-transform: uppercase;
     margin-bottom: 42px;
     border: 2px solid $color-white;
   }
@@ -192,7 +194,7 @@
 
   &:hover,
   &:focus-visible {
-    color: $color-bright-blue;
+    color: $color-bright-blue;;
     background-color: $color-white;
     outline: none;
   }

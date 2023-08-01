@@ -78,9 +78,11 @@
   border: none;
   cursor: pointer;
 
-  @include hover-focus {
+  &:hover,
+  &:focus-visible {
     background: url("../img/sprite/acc-hover-focus.svg") no-repeat;
     background-size: cover;
+    outline: none;
   }
 
   &:disabled {

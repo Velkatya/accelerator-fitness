@@ -47,7 +47,7 @@
   }
 
   @include vp-767 {
-    padding: 66px 15px 70px;
+    padding: 68px 15px 70px;
 
     &::after {
       content: none;
@@ -75,6 +75,10 @@
 
   @include h3-header;
   text-align: center;
+
+  @include vp-1199 {
+    padding-bottom: 25px;
+  }
 }
 
 .subscription__tabs {
@@ -152,6 +156,7 @@
   border: none;
   outline: none;
   background-color: $color-transperent;
+  cursor: pointer;
 
   @include hover-focus {
     color: $color-primary;
@@ -233,8 +238,8 @@
   z-index: 2;
 
 
-  @include hover {
-
+  &:hover,
+  &:focus {
     padding-top: 61px;
     padding-bottom: 61px;
     border: 7px solid;
@@ -365,6 +370,12 @@
   }
 }
 
+.subscription__button:focus .subscription__element-wrapper {
+  border: 7px solid;
+  border-image: $button-gradient;
+  border-image-slice: 1;
+}
+
 
 .subscription__price-wrapper {
   position: relative;
@@ -375,4 +386,12 @@
   @include vp-767 {
     margin-bottom: 41px;
   }
+}
+
+.subscription__element-wrapper:hover .subscription__button {
+  padding: 26px;
+    color: $color-white;
+    background: linear-gradient(to right, #ed0233, #003eb7);
+    border: none;
+    outline: none;
 }
