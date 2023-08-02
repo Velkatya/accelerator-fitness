@@ -53,7 +53,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: $color-white;
-  background-color: #ED0233;
+  background-color: #ed0233;
 
   @include vp-1199 {
     grid-template-columns: 279px 399px;

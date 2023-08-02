@@ -266,6 +266,10 @@
   display: block;
 }
 
+.trainers__slide:focus .trainers__info {
+  display: block;
+}
+
 .trainers__info > p {
   position: static;
   margin: 0 0 2px;

@@ -29,16 +29,19 @@
 
 .contacts h3 {
   @include h3-header;
+  -webkit-text-stroke-width: 0.7px;
 
   margin: 0 0 42px;
-  letter-spacing: 0.03em;
+  letter-spacing: 1.62px;
 
   @include vp-1199 {
     margin-bottom: 36px;
+    letter-spacing: 1.26px;
   }
 
   @include vp-767 {
     margin-bottom: 38px;
+    letter-spacing: 0.96px;
   }
 }
 
@@ -113,6 +116,7 @@
   font-size: 16px;
   line-height: 150%;
   font-weight: 700;
+  -webkit-text-stroke-width: 0.3px;
 
   @include vp-1199 {
     margin-bottom: 8px;
@@ -122,6 +126,7 @@
 
 .contacts__item p,
 .contacts__item a {
+  -webkit-text-stroke-width: 0.1px;
   margin: 0;
   font-size: 14px;
   line-height: 22px;

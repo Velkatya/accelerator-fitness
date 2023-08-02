@@ -19,11 +19,12 @@
 }
 
 .form h3 {
+  -webkit-text-stroke-width: 1.2px;
+
   @include h3-header;
 
   margin: 0 0 30px;
   letter-spacing: 0.14rem;
-  -webkit-text-stroke-width: 1px;
 
   @include vp-1199 {
     margin-bottom: 34px;
@@ -87,10 +88,10 @@
   @include text-small;
 }
 
-.form__name.is-invalid input,
-.form__phone.is-invalid input {
-  border-bottom: 1px solid $color-form-error;
-}
+// .form__name.is-invalid input,
+// .form__phone.is-invalid input {
+//   border-bottom: 1px solid $color-form-error;
+// }
 
 .form__name,
 .form__phone {
@@ -120,9 +121,6 @@
     }
   }
 }
-
-
-
 
 .form__name.is-invalid .input-message.is-invalid,
 .form__phone .input-message.is-invalid {
@@ -162,71 +160,3 @@
     margin-top: 9px;
   }
 }
-
-
-// .subscription__form-wrapper {
-//   input {
-//     padding: 14px 0 5px;
-//     width: 100%;
-
-//     color: $color-default-white;
-
-//     border: none;
-//     border-bottom: 1px solid #74819c;
-//     background: none;
-
-//     transition: border $trans-default;
-
-//     &::placeholder {
-//       font-family: $ff-roboto-condenced;
-//       font-size: 14px;
-//       line-height: 16px;
-//       font-weight: 400;
-//       color: $color-default-white;
-//     }
-
-//     @include hover {
-//       border-bottom-color: $color-default-white;
-//     }
-
-//     &:active,
-//     &:focus {
-//       padding-left: 15px;
-//       border-bottom: none;
-//       outline: 1px solid $color-default-white;
-
-//       &::placeholder {
-//         visibility: hidden;
-//       }
-//     }
-
-// &:disabled {
-//   opacity: 0.3;
-// }
-// }
-
-// &.is-invalid {
-// position: relative;
-
-// input {
-//   border-bottom-color: $error-color;
-// }
-
-// &::after {
-//   position: absolute;
-//   top: 100%;
-//   left: 0;
-
-//   min-width: 80px;
-//   min-height: 20px;
-
-//   font-size: 14px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: 22px;
-//   color: $error-color;
-
-//   content: "Неверно введены данные";
-// }
-// }
-// }

@@ -241,8 +241,7 @@
   z-index: 2;
 
 
-  &:hover,
-  &:focus {
+  &:hover {
     padding-top: 61px;
     padding-bottom: 61px;
     border: 7px solid;
@@ -253,6 +252,11 @@
   @include vp-1199 {
     padding: 64px 77px 68px;
     width: 442px;
+
+    @include hover-focus {
+      padding-top: 57px;
+      padding-bottom: 61px;
+    }
   }
 
   @include vp-767 {
@@ -373,11 +377,11 @@
   }
 }
 
-.subscription__button:focus .subscription__element-wrapper {
-  border: 7px solid;
-  border-image: $button-gradient;
-  border-image-slice: 1;
-}
+// .subscription__button:focus .subscription__element-wrapper {
+//   border: 7px solid;
+//   border-image: $button-gradient;
+//   border-image-slice: 1;
+// }
 
 
 .subscription__price-wrapper {
@@ -393,8 +397,26 @@
 
 .subscription__element-wrapper:hover .subscription__button {
   padding: 26px;
-    color: $color-white;
-    background: linear-gradient(to right, #ed0233, #003eb7);
-    border: none;
-    outline: none;
+  color: $color-white;
+  background: linear-gradient(to right, #ed0233, #003eb7);
+  border: none;
+  outline: none;
+}
+
+.subscription__element-wrapper:focus-within {
+  padding-top: 61px;
+  padding-bottom: 61px;
+  border: 7px solid;
+  border-image: $button-gradient;
+  border-image-slice: 1;
+
+  @include vp-1199 {
+    padding-top: 57px;
+    padding-bottom: 61px;
+  }
+
+  @include vp-767 {
+    padding-top: 39px;
+    padding-bottom: 48px;
+  }
 }

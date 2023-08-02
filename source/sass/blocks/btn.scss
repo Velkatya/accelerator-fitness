@@ -51,7 +51,7 @@
 
   border-radius: 50%;
   border: none;
-  background-image: linear-gradient(-120deg,#ed0233 0,#003eb7 100%);
+  background-image: linear-gradient(-120deg, #ed0233 0, #003eb7 100%);
   background-color: $color-transperent;
 
   transition: background-color $trans-default;
@@ -121,5 +121,3 @@
     }
   }
 }
-
-
