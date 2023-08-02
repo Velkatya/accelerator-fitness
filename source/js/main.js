@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 // import {initModals} from './modules/modals/init-modals';
+import {initVideo} from './modules/video/init-video';
 import {Form} from './modules/form-validate/form';
-import './modules/video-play.js';
 import {initTabs} from './vendor/init-tabs';
 import './modules/trainers-swiper';
 import './modules/reviews-swiper';
@@ -27,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initTabs();
+    initVideo();
     initAccordions();
   });
 });

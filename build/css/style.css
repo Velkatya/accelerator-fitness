@@ -4436,7 +4436,7 @@ ul {
 }
 @media (max-width: 767px) {
   .reviews__swiper {
-    width: 226px;
+    width: 79%;
   }
 }
 
