@@ -2769,6 +2769,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -2783,7 +2787,7 @@ ul {
   content: "";
   bottom: -10px;
   left: 50%;
-  width: 341px;
+  width: 100%;
   height: 2px;
   background-color: rgba(120, 120, 120, 0.2);
   -webkit-transform: translate(-50%, 0);
