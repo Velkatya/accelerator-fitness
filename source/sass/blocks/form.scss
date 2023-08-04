@@ -88,14 +88,8 @@
   @include text-small;
 }
 
-// .form__name.is-invalid input,
-// .form__phone.is-invalid input {
-//   border-bottom: 1px solid $color-form-error;
-// }
-
 .form__name,
 .form__phone {
-
   &.is-invalid {
     position: relative;
 

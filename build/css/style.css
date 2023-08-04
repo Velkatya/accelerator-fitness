@@ -4241,6 +4241,7 @@ ul {
     margin-bottom: 16px;
     font-size: 64px;
     line-height: 64px;
+    letter-spacing: 2.6px;
   }
 }
 
@@ -4491,7 +4492,7 @@ ul {
 }
 @media (max-width: 767px) {
   .reviews__slide-wrapper {
-    padding: 40px 17px 34px;
+    padding: 40px 18px 34px;
     display: -ms-grid;
     display: grid;
     min-height: 335px;
