@@ -58,6 +58,13 @@
   @include vp-767 {
     height: 274px;
   }
+
+  // @include hover-focus {
+
+  //   .trainer-card__info {
+  //     visibility: visible;
+  //   }
+  // }
 }
 
 .trainers__slide img {
@@ -258,13 +265,14 @@
   display: block;
 }
 
-.trainers__slide:focus-visible .trainers__info {
-  display: block;
+.trainers__slide:focus-visible {
+  outline: none;
 }
 
 .trainers__slide:focus .trainers__info {
   display: block;
 }
+
 
 .trainers__info > p {
   position: static;

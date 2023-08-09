@@ -82,6 +82,8 @@
   }
 
   @include active {
+    width: 58px;
+    height: 58px;
     background: $color-white;
 
     &::after {
@@ -91,6 +93,8 @@
   }
 
   &:active {
+    width: 58px;
+    height: 58px;
     background: $color-white;
 
     &::after {

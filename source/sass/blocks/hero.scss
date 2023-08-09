@@ -11,12 +11,16 @@
   max-width: 1366px;
   color: $color-white;
 
-  @include vp-1199 {
+  @media (max-width: (1280px)) {
     padding: 82px 37px;
     display: grid;
-    width: 750px;
+    width: 850px;
     grid-template-columns: 1fr 1fr;
     gap: 28px;
+  }
+
+  @include vp-1199 {
+    width: 750px;
   }
 
   @include vp-767 {

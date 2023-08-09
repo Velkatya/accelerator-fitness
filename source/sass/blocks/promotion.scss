@@ -43,7 +43,7 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    width: 290px;
+    width: 100%;
   }
 }
 
@@ -240,4 +240,8 @@
   height: 100%;
   object-fit: fill;
   background-color: $color-bright-blue;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }

@@ -23,7 +23,9 @@
               <img src="./img/sprite/sypergym.svg" alt="" width="122" height="44">
             </picture>
           </a>
-          <a class="header__phone" href="tel:88005555555" aria-label="Позвонить по номеру телефона.">8-800-555-55-55</a>
+          <div class="header__container">
+            <a class="header__phone" href="tel:88005555555" aria-label="Позвонить по номеру телефона.">8-800-555-55-55</a>
+          </div>
         </div>
       </header>
       <main class="main">
@@ -233,6 +235,7 @@
         <section class="trainers">
           <div class="trainers__wrapper">
             <h3>Тренеры</h3>
+            <div class="trainers__swiper-button trainers__swiper-button--prev"></div>
             <div class="swiper trainers__swiper">
               <div class="swiper-wrapper trainers__swiper-wrapper">
 
@@ -325,7 +328,7 @@
                   </div>
                 </div>
 
-                <div class="trainers__slide swiper-slide">
+                <div class="trainers__slide swiper-slide" tabindex="0">
                   <picture>
                     <source media="(max-width: 767px)" type="image/webp" srcset="./img/trainer-1.webp 1x, ./img/trainer-1@2x.webp 2x" width="226" height="274">
                     <source media="(max-width: 1199px)" type="image/webp" srcset="./img/trainer-1.webp 1x, ./img/trainer-1@2x.webp 2x" width="268" height="294">
@@ -347,7 +350,7 @@
                   </div>
                 </div>
 
-                <div class="trainers__slide swiper-slide">
+                <div class="trainers__slide swiper-slide" tabindex="0">
                   <picture>
                     <source media="(max-width: 767px)" type="image/webp" srcset="./img/trainer-2.webp 1x, ./img/trainer-2@2x.webp 2x" width="226" height="274">
                     <source media="(max-width: 1199px)" type="image/webp" srcset="./img/trainer-2.webp 1x, ./img/trainer-2@2x.webp 2x" width="268" height="294">
@@ -369,7 +372,7 @@
                   </div>
                 </div>
 
-                <div class="trainers__slide swiper-slide">
+                <div class="trainers__slide swiper-slide" tabindex="0">
                   <picture>
                     <source media="(max-width: 767px)" type="image/webp" srcset="./img/trainer-3.webp 1x, ./img/trainer-3@2x.webp 2x" width="226" height="274">
                     <source media="(max-width: 1199px)" type="image/webp" srcset="./img/trainer-3.webp 1x, ./img/trainer-3@2x.webp 2x" width="268" height="294">
@@ -391,7 +394,7 @@
                   </div>
                 </div>
 
-                <div class="trainers__slide swiper-slide">
+                <div class="trainers__slide swiper-slide" tabindex="0">
                   <picture>
                     <source media="(max-width: 767px)" type="image/webp" srcset="./img/trainer-4.webp 1x, ./img/trainer-4@2x.webp 2x" width="226" height="274">
                     <source media="(max-width: 1199px)" type="image/webp" srcset="./img/trainer-4.webp 1x, ./img/trainer-4@2x.webp 2x" width="268" height="294">
@@ -414,7 +417,7 @@
                 </div>
               </div>
             </div>
-            <div class="trainers__swiper-button trainers__swiper-button--prev"></div>
+            <!-- <div class="trainers__swiper-button trainers__swiper-button--prev"></div> -->
             <div class="trainers__swiper-button trainers__swiper-button--next"></div>
           </div>
         </section>
