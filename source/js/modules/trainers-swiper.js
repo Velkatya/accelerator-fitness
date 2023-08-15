@@ -71,5 +71,4 @@ const swiperTrainers = new Swiper('.trainers__swiper', {
   },
 });
 
-
 export {swiperTrainers};
